@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hot Wheels Custom Cars</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+</head>
+
+<body>
+
+    <div id="video-background"></div>
+    <div class="overlay"></div>
+    <div class="container">
+
+        <div class="form-container" id="formContainer">
+            <h2>Custom Form</h2>
+            <form id="customForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="carType">Car Type:</label>
+                <select id="carType" name="carType">
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="sports">Sports</option>
+                </select>
+
+                <label>Customizations:</label>
+                <label>
+                    <input type="checkbox" name="customizations" value="paint"> Custom Paint
+                </label>
+                <label>
+                    <input type="checkbox" name="customizations" value="wheels"> Custom Wheels
+                </label>
+                <label>
+                    <input type="checkbox" name="customizations" value="interior"> Custom Interior
+                </label>
+
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="form.js"></script>
+
+</html>
